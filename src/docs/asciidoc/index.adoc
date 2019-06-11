@@ -1,0 +1,31 @@
+= Search API Guide
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[overview]]
+= Overview
+
+[[overview-http-verbs]]
+== HTTP verbs
+
+== 검색
+
+엔진 검색
+
+=== 요청 구조
+
+==== 요청 파라미터들
+
+include::{snippets}/index/request-fields.adoc[]
+include::{snippets}/index/http-request.adoc[]
+
+=== 응답 구조
+
+==== 응답 파라미터들
+
+include::{snippets}/index/response-fields.adoc[]
+include::{snippets}/index/http-response.adoc[]

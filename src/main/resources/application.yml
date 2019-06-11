@@ -1,0 +1,39 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+server:
+  port: 1234
+
+es:
+  disp:
+    host: "127.0.0.1:9200"
+  recom:
+    host: "127.0.0.1:9200"
+
+---
+
+spring:
+  profiles: qa
+
+es:
+  disp:
+    host: "127.0.0.1:9200"
+  recom:
+    host: "127.0.0.1:9200"
+
+---
+
+spring:
+  profiles: prod
+  devtools:
+    add-properties: false
+    restart:
+        enabled: false
+
+es:
+  disp:
+    host: "127.0.0.1:9200"
+  recom:
+    host: "127.0.0.1:9200"
